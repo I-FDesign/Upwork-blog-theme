@@ -1,0 +1,480 @@
+@media screen and (max-width: 1000px) {
+    html{
+        overflow: visible;
+        overflow-x: hidden;
+    }
+    .content{
+        display: none;
+    }
+
+    .mobile-content{
+        display: block;
+        font-family: sans-serif;
+    }
+
+    .navbar {
+        background:#6B6054;
+        padding-left: 2vw;
+        position: relative;
+    }
+
+    .navbar .navbar-btn{
+        padding: 2vh 2vw;
+    }
+
+    .navbar .navbar-btn i{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .navbar .navbar-options{
+        display: none;
+        background: #6B6054;
+        position: absolute;
+        right: 0;
+        top: 6.66vh;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .navbar .navbar-options ul{
+        flex-direction: column;
+    }
+
+    .navbar .navbar-options ul li{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .navbar-options ul li i{
+        display: block;
+        margin-right: 1vw;
+    }
+    
+
+    .mobile-content .container{
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 100%;
+    }
+
+    .mobile-content .parallax{
+        transition: .3s all ease;
+        background-size: 95% !important;
+        height: 55vh;
+        min-height: 60vh;
+        background-size: 85%!important;
+        background-repeat: no-repeat !important;
+        background-color: #f9f9f9 !important;
+        position: relative;
+        background: url("https://sixthstory.co.uk/wp-content/uploads/2017/05/sixth-story-home-background.png") 40vw 25%;
+    }
+
+    .mobile-content .parallax .container{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-content .parallax .container:before{
+        display: table;
+        content: " ";
+    }
+
+    .mobile-content .parallax .container span.title{
+        width: 100%;
+        font-size: 460px;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        word-break: break-all;
+        letter-spacing: -20px;
+        color: #D5ECD4;
+        opacity: .5;
+        word-wrap: break-word;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: .65;
+        font-weight: 700;
+        transition: .3s all ease-in-out;
+    }
+
+    .mobile-content .parallax .container .text.page{
+        width: 700px;
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+    }
+
+    .mobile-content .parallax .container .text.page h1{
+        font-size: 80px;
+        color: #6B6054;
+    }
+
+    .mobile-content .parallax .container .text.page h2{
+        font-size: 18px;
+        width: 600px;
+        max-width: 100%;
+        line-height: 1.6;
+        color: #6B6054;
+    }
+
+    .mobile-content .parallax .scrolldown {
+        position: absolute;
+        bottom: -3vh;
+        right: 15px;
+        z-index: 99;
+        border: 4px solid #6B6054;
+        border-radius: 0;
+        transition: .2s all ease-in-out;
+        font-weight: 700;
+        padding: .8vh 1vh;
+        overflow: hidden;
+    }
+
+    .mobile-content .parallax .scrolldown img{
+        height: 3vh;
+    }
+
+    .mobile-content .parallax .scrolldown:hover{
+        background: rgba(107,96,84, .4);
+        cursor: pointer;
+    }
+
+    .mobile-content .search-bar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+    }
+
+    .mobile-content .search-bar .form-group{
+        margin-bottom: 15px;
+    }
+
+    .mobile-content .search-bar .sr-only{
+        border: 0;
+        clip: rect(0,0,0,0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .mobile-content .search-bar .search input{
+        border: none;
+        border-bottom: 2px solid #6B6054;
+        width: 220px;
+        font-size: 16px;
+        background: 0 0;
+        outline: 0!important;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    .mobile-content .search-bar .search input::placeholder{
+        font-size: 18px;
+    }
+
+    .mobile-content .search-bar .categories{
+        position: relative;
+    }
+
+    .mobile-content .search-bar .categories .placeholder{
+        padding: 10px 17px;
+        width: 189px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 44px;
+        color: #6B6054;
+        border-color: #6B6054;
+        background: 0 0;
+        font-size: inherit;
+        border: 4px solid;
+        border-radius: 0;
+        transition: .3s all ease-in-out;
+        font-weight: 700;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .mobile-content .search-bar .categories .placeholder:hover{
+        color: white;
+        border: none;
+    }
+
+    .mobile-content .search-bar .categories .placeholder:hover i{
+        color: white;
+    }
+
+    .mobile-content .search-bar .categories .placeholder:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: #6B6054;
+        z-index: -1;
+        transform: rotate(-30deg) translate(-30%,-100%);
+        transform-origin: left;
+        transition: .2s;
+    }
+
+    .mobile-content .search-bar .categories .placeholder:hover:before{
+        transform: rotate(0) translate(0,0);
+    }
+
+    .mobile-content .search-bar .categories .placeholder i{
+        color: #6B6054;
+        border-bottom: none;
+        transition: .3s all ease-in-out;
+    }
+
+    .mobile-content .search-bar .categories ul{
+        margin: 0;
+        padding: 0;
+        width: 189px;
+        border: 4px solid #6B6054;
+        border-top: 0;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        z-index: 10;
+        background: #fff;
+        display: none;
+    }
+
+    .mobile-content .search-bar .categories ul li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    .mobile-content .search-bar .categories ul li p{
+        color: #6B6054;
+        width: 100%;
+        border-radius: 0;
+        transition: .3s all ease-in-out;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 12px 20px;
+        display: inline-flex;
+        border: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile-content .posts{
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------Posts--------------------------------------------------- */
+
+
+.mobile-content .posts{
+    margin-top: 2vh;
+}
+
+.posts .post{
+    margin: 50px 0;
+    box-shadow: 0 31px 44px -30px rgba(0,0,0,.3);
+}
+
+.posts .post .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.posts .post .image{
+    width: 100%;
+    overflow: hidden;
+    max-height: 40vh;
+}
+
+.posts .post .image img{
+    width: 100%;
+}
+
+.posts .post .text{
+    padding: 4vw 6vw;
+    background: #f9f9f9;
+}
+
+.posts .post .text h3{
+    font-size: 33px;
+    margin-bottom: 25px;
+    color: #000;
+    font-weight: 700;
+}
+
+.posts .post .text p.description{
+    margin-bottom: 25px;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.posts .post .text .read-blog-btn{
+    background: 0 0;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    color: #6B6054;
+    border-color: #6B6054;
+    height: 60px;
+    min-width: 228px;
+    font-size: inherit;
+    border: 4px solid;
+    border-radius: 0;
+    transition: .3s all ease-in-out;
+    font-weight: 700;
+    padding: 10px 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.posts .post .text .read-blog-btn:hover{
+    background: #6B6054;
+    color: white;
+}
+
+.posts .post .text .read-blog-btn:after{
+    content: '';
+    background: url(../assets/img/right-arrow-mobile.svg);
+    background-size: contain!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    height: 18px;
+    width: 33.5px;
+    display: block;
+    transition: .3s all ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.posts .post .text p.date{
+    margin-top: 5px;
+    font-size: 19px;
+    color: #000;
+    font-weight: 400;
+    opacity: .4;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 450px){
+    .posts .post .text h3{
+        font-size: 28px;
+    }
+
+    .posts .post .text p.description{
+        font-size: 16px;
+    }
+
+    .posts .post .text .read-blog-btn{
+        height: 50px;
+        width: 100%;
+    }
+}
+
+/* -----------------------------------------------Media queries----------------------------------------------- */
+
+@media screen and (max-width: 992px){
+    .mobile-content .parallax .container span.title{
+        font-size: 360px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        width: 970px !important;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .mobile-content .parallax .container span.title{
+        font-size: 300px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mobile-content .parallax .container span.title{
+        font-size: 260px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        padding: 0 2vw;
+    }
+    .mobile-content .parallax{
+        min-height: 35vh;
+        height: 35vh;
+    }
+
+    .mobile-content .parallax .container span.title{
+        font-size: 180px;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-content .parallax .container .text.page h1{
+        font-size: 50px;
+        margin-top: 9vh;
+        letter-spacing: 1px;
+        margin-bottom: 2vh;
+    }
+    
+    .mobile-content .parallax .container .text.page h2{
+        font-size: 18px;
+    }
+
+    .mobile-content .search-bar {
+        flex-direction: column;
+    }
+
+    .mobile-content .search-bar .search input{
+        width: 100%;
+        margin-bottom: 1.5vh;
+        padding-bottom: 3px;
+    }
+    
+    .mobile-content .search-bar .categories .placeholder,
+    .mobile-content .search-bar .categories ul{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mobile-content .parallax .container span.title{
+        font-size: 160px;
+    }
+}

@@ -5,6 +5,22 @@ $(document).ready(()=>{
     $([document.documentElement, document.body]).animate({
         scrollTop: 0
     }, 10);
+
+    //Slide mobile navbar
+
+    $('#navbar_btn').on('click', () => {
+        $('.navbar-options').slideToggle(300);
+    })
+
+    $('#mobile_header_scroll').on('click', () => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('.mobile-content .filters').offset().top
+        }, 500);
+    })
+
+    $('#category_selection_btn').on('click', () => {
+        $('.mobile-content .filters .categories ul').slideToggle(300);
+    })
 })
 
 function navigate(scrollTo, nextPage){
